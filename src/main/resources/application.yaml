@@ -1,0 +1,19 @@
+spring:
+    datasource:
+      url: jdbc:postgresql://dpg-cp2gkiev3ddc73clvh3g-a.frankfurt-postgres.render.com/projectdb_t2fq
+      username: projectdb_t2fq_user
+      password: BfCPfKizmeGaZqYMXsWwYgvhapQCJH5b
+    jpa:
+      hibernate:
+        ddl-auto: update
+
+
+logging:
+  level:
+    org.springframework.security.web: DEBUG
+
+movie-match:
+  provider:
+    the-movie-db:
+      api-key: 3963874aea0d1648ed6aed15e1f837bf
+      api-token: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYjVjNjMyZmQ1OGQwMDBhMjc3MzY0MDkxNzdlZjEzYSIsInN1YiI6IjY0ZGE5YWZhZjQ5NWVlMDI4ZjY1OTA1NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.v1Im4HTqaSm-mC4su1N3-08k7NO3sRoH74VJVTSjbPA
