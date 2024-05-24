@@ -27,14 +27,12 @@ public class CollectionService {
         try {
             logger.info("Add collection movie for user_id: {}", userMovieCollection.getUserID());
             logger.info("Add collection movie with movie_title: {}", userMovieCollection.getMovieTitle());
-            System.out.println(userRepository.findAll());
             collectionRepository.save(userMovieCollection);
             return true;
         }
         catch(Exception e) {
             return false;
         }
-
     }
 
 
@@ -42,7 +40,7 @@ public class CollectionService {
         return collectionRepository.findByUserIDUserID(id);
     }
     public Movie getMovieFromAPIByName(String movieTitle) {
-        List<Movie> movies = this.movieService.fetch(options -> {}, movieTitle);
+        List<Movie> movies = movieService.fetch(options -> {}, movieTitle);
         logger.info("Fetched movie title: {}", movies.get(0).getTitle());
         logger.info("Fetched movie description: {}", movies.get(0).getDescription());
         logger.info("Fetched movie IMDB rating: {}", movies.get(0).getRating());
