@@ -1,6 +1,6 @@
 spring:
     datasource:
-      url: jdbc:postgresql://dpg-cp2gkiev3ddc73clvh3g-a.frankfurt-postgres.render.com/projectdb_t2fq
+      url: jdbc:postgresql://srv-cp89rrf109ks738hiseg-a.frankfurt-postgres.render.com/projectdb_t2fq
       username: projectdb_t2fq_user
       password: BfCPfKizmeGaZqYMXsWwYgvhapQCJH5b
     jpa:
